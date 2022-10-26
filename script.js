@@ -578,6 +578,9 @@ $(function() {
         game.init().run();
         $('#sudoku_menu').removeClass('open-sidebar');
     });
+    $('.gameover_container .restart').on('click', function(){
+        game.init().run();
+    });
     
     console.timeEnd("loading time");
 });
